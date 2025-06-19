@@ -17,6 +17,11 @@ const Portfolio = () => {
     contact: useRef<HTMLDivElement>(null),
   };
 
+  // Debug log to ensure component is mounting
+  useEffect(() => {
+    console.log('Portfolio component mounted');
+  }, []);
+
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -128,12 +133,14 @@ const Portfolio = () => {
     }
   ];
 
+  console.log('Portfolio rendering...');
+
   return (
-    <div className="relative">
+    <div className="relative min-h-screen bg-[#EAEFEF]">
       <FloatingProfileCircle />
       
       {/* Header with Hamburger Menu */}
-      <header className="sticky-header glass-effect">
+      <header className="sticky top-0 z-50 glass-effect">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-[#333446]">NS</div>
           
