@@ -2,9 +2,8 @@
 export const portfolioConfig = {
   // Personal Information
   personal: {
-    name: "Nikolaj",
-    lastName: "Storm Petersen",
-    tagline: "",
+    name: "Nikolaj Storm Petersen",
+    tagline: "Shure you want to look arroung here?? this is just me playing arround.",
     profileImage: "/assets/profil.png",
     floatingCircleImage: "/assets/Small.png"
   },
