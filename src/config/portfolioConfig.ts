@@ -177,11 +177,25 @@ export const portfolioConfig = {
 
   // Projects Section
   projects: {
-    title: "Creative Projects",
+    title: "Projects",
     items: [
       {
-        title: "Interactive Data Visualization Platform",
-        description: "A web-based platform for creating stunning, interactive data visualizations with real-time collaboration features.",
+        title: "Legal AI",
+        description: "Donna AI is an AI assistant built on a vast database of Danish law. I built it from the ground up:
+
+Developed a custom scraper to crawl websites containing legal texts
+
+Built and tested an optimized hybrid chunking script with many advanced features
+
+Embedded the chunks using a Vertex API and indexed them in a Pinecone vector database
+
+Created a complete front-end, hosted on GitHub Pages
+
+Developed a Flask back-end using the Vertex API for embeddings and OpenAI's API for generation
+
+The result: A user-friendly AI legal assistant.
+
+",
         tech: ["React", "D3.js", "Node.js", "WebSocket"],
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
         github: "https://github.com/example/dataviz",
@@ -214,23 +228,22 @@ export const portfolioConfig = {
       {
         type: "email",
         label: "Email",
-        url: "mailto:hello@nikolajstorm.com"
+        url: "mailto:nikolajstormpetersen@gmail.com"
       },
       {
         type: "linkedin",
         label: "LinkedIn",
-        url: "https://linkedin.com/in/nikolajstorm"
+        url: "https://www.linkedin.com/in/nstorm/"
       },
       {
         type: "github",
         label: "GitHub",
-        url: "https://github.com/nikolaj-storm"
-      }
+        url: "https://github.com/Nikolaj-Storm
     ]
   },
 
   // Footer
   footer: {
-    copyright: "© 2024 Nikolaj Storm. Crafted with care and minimal design principles."
+    copyright: "© 2025 Nikolaj Storm Petersen"
   }
 };
