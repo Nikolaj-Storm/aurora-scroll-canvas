@@ -63,7 +63,7 @@ const FloatingProfileCircle = () => {
       }}
     >
       <img
-        src="/lovable-uploads/85845c7d-54a3-4c65-bc50-ea663f750414.png"
+        src="public/mini.jpg"
         alt="Profile"
         className="w-full h-full object-cover rounded-full"
       />
