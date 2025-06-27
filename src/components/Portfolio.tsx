@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, Download, ExternalLink, Github, Mail, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import FloatingProfileCircle from './FloatingProfileCircle';
 import ScrollTrigger from './ScrollTrigger';
 import { portfolioConfig } from '../config/portfolioConfig';
@@ -107,7 +108,6 @@ const Portfolio = () => {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-6xl md:text-8xl font-extralight text-[#333446] mb-6 leading-tight">
               {portfolioConfig.personal.name}
-              <span className="block text-[#7F8CAA]">{portfolioConfig.personal.lastName}</span>
             </h1>
             <p className="text-xl md:text-2xl text-[#7F8CAA] font-light mb-8 leading-relaxed">
               {portfolioConfig.personal.tagline}
@@ -150,17 +150,19 @@ const Portfolio = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {portfolioConfig.blog.posts.map((post, index) => (
                 <ScrollTrigger key={index} delay={index * 200}>
-                  <article className="glass-effect rounded-3xl overflow-hidden hover:scale-105 transition-transform duration-300">
-                    <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
-                    <div className="p-6">
-                      <div className="flex justify-between items-center mb-3">
-                        <span className="text-sm text-[#7F8CAA]">{post.date}</span>
-                        <span className="text-sm text-[#7F8CAA]">{post.readTime}</span>
+                  <Link to={`/blog/${post.id}`}>
+                    <article className="glass-effect rounded-3xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+                      <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+                      <div className="p-6">
+                        <div className="flex justify-between items-center mb-3">
+                          <span className="text-sm text-[#7F8CAA]">{post.date}</span>
+                          <span className="text-sm text-[#7F8CAA]">{post.readTime}</span>
+                        </div>
+                        <h3 className="text-xl font-medium text-[#333446] mb-3">{post.title}</h3>
+                        <p className="text-[#7F8CAA] text-sm leading-relaxed">{post.excerpt}</p>
                       </div>
-                      <h3 className="text-xl font-medium text-[#333446] mb-3">{post.title}</h3>
-                      <p className="text-[#7F8CAA] text-sm leading-relaxed">{post.excerpt}</p>
-                    </div>
-                  </article>
+                    </article>
+                  </Link>
                 </ScrollTrigger>
               ))}
             </div>
@@ -176,16 +178,18 @@ const Portfolio = () => {
             <div className="space-y-8">
               {portfolioConfig.academicPapers.papers.map((paper, index) => (
                 <ScrollTrigger key={index} delay={index * 200}>
-                  <div className="glass-effect p-8 rounded-3xl">
-                    <h3 className="text-2xl font-medium text-[#333446] mb-3">{paper.title}</h3>
-                    <p className="text-[#7F8CAA] mb-2">{paper.authors}</p>
-                    <p className="text-sm text-[#7F8CAA] mb-4">{paper.journal}, {paper.year}</p>
-                    <p className="text-[#7F8CAA] leading-relaxed mb-6">{paper.abstract}</p>
-                    <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#333446] text-white rounded-full hover:bg-[#7F8CAA] transition-colors">
-                      <Download size={16} />
-                      Download PDF
-                    </button>
-                  </div>
+                  <Link to={`/paper/${paper.id}`}>
+                    <div className="glass-effect p-8 rounded-3xl hover:scale-105 transition-transform duration-300 cursor-pointer">
+                      <h3 className="text-2xl font-medium text-[#333446] mb-3">{paper.title}</h3>
+                      <p className="text-[#7F8CAA] mb-2">{paper.authors}</p>
+                      <p className="text-sm text-[#7F8CAA] mb-4">{paper.journal}, {paper.year}</p>
+                      <p className="text-[#7F8CAA] leading-relaxed mb-6">{paper.abstract}</p>
+                      <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#333446] text-white rounded-full hover:bg-[#7F8CAA] transition-colors">
+                        <Download size={16} />
+                        Read Paper
+                      </div>
+                    </div>
+                  </Link>
                 </ScrollTrigger>
               ))}
             </div>
