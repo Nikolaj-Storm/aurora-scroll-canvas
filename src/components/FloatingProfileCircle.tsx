@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { portfolioConfig } from '../config/portfolioConfig';
 
 const FloatingProfileCircle = () => {
   const [position, setPosition] = useState({ x: 100, y: 100 });
@@ -63,7 +64,7 @@ const FloatingProfileCircle = () => {
       }}
     >
       <img
-        src="/Small.png"
+        src={portfolioConfig.personal.floatingCircleImage}
         alt="Profile"
         className="w-full h-full object-cover rounded-full"
       />
