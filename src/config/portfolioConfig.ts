@@ -5,7 +5,7 @@ export const portfolioConfig = {
     name: "Nikolaj",
     lastName: "Storm Petersen",
     tagline: "",
-    profileImage: "/lovable-uploads/a4e71c80-eb0f-4ad6-91cb-b174fd7f4db3.png",
+    profileImage: "/assets/profil.png",
     floatingCircleImage: "/assets/Small.png"
   },
 
