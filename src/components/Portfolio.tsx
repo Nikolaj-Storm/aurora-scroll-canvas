@@ -136,14 +136,12 @@ const Portfolio = () => {
   console.log('Portfolio rendering...');
 
   return (
-    <div className="relative min-h-screen bg-[#EAEFEF]">
+    <div className="relative min-h-screen bg-[#F7E8D6]">
       <FloatingProfileCircle />
       
       {/* Header with Hamburger Menu */}
       <header className="sticky top-0 z-50 glass-effect">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-[#333446]">NS</div>
-          
+        <div className="container mx-auto px-6 py-4 flex justify-end items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="z-50 relative p-2 rounded-lg glass-effect"
@@ -206,14 +204,11 @@ const Portfolio = () => {
                 </p>
               </div>
               <div className="glass-effect p-8 rounded-3xl">
-                <h3 className="text-2xl font-light text-[#333446] mb-4">Skills</h3>
-                <div className="flex flex-wrap gap-3">
-                  {['React', 'TypeScript', 'Design Systems', 'Data Visualization', 'UX Research', 'Academic Writing'].map((skill) => (
-                    <span key={skill} className="px-4 py-2 bg-[#B8CFCE] text-[#333446] rounded-full text-sm">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+                <img 
+                  src="/lovable-uploads/a4e71c80-eb0f-4ad6-91cb-b174fd7f4db3.png" 
+                  alt="Nikolaj Storm" 
+                  className="w-full h-auto rounded-2xl"
+                />
               </div>
             </div>
           </ScrollTrigger>
