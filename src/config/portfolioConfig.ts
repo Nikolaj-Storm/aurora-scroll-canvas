@@ -2,7 +2,7 @@ export const portfolioConfig = {
   // Personal Information
   personal: {
     name: "Nikolaj Storm Petersen",
-    tagline: "Shure you want to look arroung here?? this is just me playing arround.",
+    tagline: "Shure you want to look around here? ... It's just me playing around",
     profileImage: "/aurora-scroll-canvas/lovable-uploads/profil.png",
     floatingCircleImage: "/aurora-scroll-canvas/lovable-uploads/Small.png"
   },
@@ -11,7 +11,7 @@ export const portfolioConfig = {
   about: {
     title: "About",
     paragraphs: [
-      "I'm a passionate creator at the intersection of technology and design, crafting digital experiences that tell meaningful stories.",
+      "Nikolaj here, short life story: grew up on small family farm in the middle of nowhere - loats of sports (Football, Swimming, MotoCross, Handball, Parkour, others) - Build stuff in our workshop - liked business, so decided to break family tradition and go HHX (The Higher Commercial Examination Programme) - liked tech, heard San Francisco was the world capital, so decided to start bachelor in at University of San Francisco - Decided the cost of living and studying in SF was to high compared to oppertunities gained, so droped out - Moved back home to the farm, what now? - Sales is cool! moved to Copenhagen to work in a real sales pit. Sell me this pen type shit (moved into my onkels basement to make this work) - Yes finally got a place! Moved into collective in the middle of copenhagen (I later meet my girlfriend here) - Sales pit job acted unethically, so i quit - shit now i'm in Copenhagen with rent to pay, no job and no plan - Got into a competitive digital management bachelor at Copenhagen Business School, so that's cool - Worked at a gass station to (horrible for the soul, but free Pigs in a blanket and pizza, if you think the rules about throwing them out are stupid) - This new school is cool, let's do free internships to get experience - internships in blockchain and techconference businesses. Pretty cool, but they don't value me or my time at all - Got into high-ticket B2B sales a VAEKST, super cool collugues and development - But i put my name in the Novo Nordisk talent pipeline a while back and now they call about different oppertunities, so i took an internship in their Quality Assurance department, nice sallary and fun tasks - got together with my girlfreind (Best thing in my life) - bought an appartment with my sister, where i moved to (still in Copenhagen) - internship over - focus on playing with projects and developing my skills (AI is cool huh) - got offered exchange spot at cool university in England... what should I do, is this a better opportunity than i can create for myself in Copenhagen?... turn it down, now i can stay in CPH with my GF - Shit, just got offered internship at Innovation Center Denmark in Boston USA.... hard choice.. too good lt's do it - ...too be continued",
       "With a background in both academic research and creative development, I bring a unique perspective to every project I work on."
     ]
   },
