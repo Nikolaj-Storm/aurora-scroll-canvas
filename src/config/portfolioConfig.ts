@@ -3,8 +3,8 @@ export const portfolioConfig = {
   personal: {
     name: "Nikolaj Storm Petersen",
     tagline: "Shure you want to look arroung here?? this is just me playing arround.",
-    profileImage: "/lovable-uploads/Small.png", // Fixed path
-    floatingCircleImage: "/lovable-uploads/profil.png" // Fixed path
+    profileImage: "/aurora-scroll-canvas/lovable-uploads/Small.png",
+    floatingCircleImage: "/aurora-scroll-canvas/lovable-uploads/profil.png"
   },
 
   // About Section
