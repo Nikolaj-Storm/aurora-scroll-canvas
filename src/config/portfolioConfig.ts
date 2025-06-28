@@ -224,7 +224,8 @@ export const portfolioConfig = {
       {
         type: "github",
         label: "GitHub",
-        url: "https://github.com/Nikolaj-Storm
+        url: "https://github.com/Nikolaj-Storm"
+      }
     ]
   },
 
